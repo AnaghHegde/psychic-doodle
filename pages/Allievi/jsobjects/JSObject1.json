@@ -1,0 +1,51 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Allievi",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcurrentItem: {},\n\t\n\t\tEliminaIscrizioneAlunno: () => {\n\t\t\tlet ssel\n\t\t\tssel = \"Delete from Iscrizione \"\n\t\t\tssel += \" where IDAllievo = \" + DatiAllievo.data[0].IDAllievo + \" \"\n\t\t\tssel += \" and  IDClasse = \" +  appsmith.store.idclasseeli + \"  \"\n\t\t\tstoreValue('ssel', ssel)\n\t\t\t//showAlert(ssel)\n\t\t\tEseguiInsert.run(() => { \n\t\t\t\tAllievoIscrizioni.run(() =>{\n\t\t\t\t\t \n\t\t\t\t\t\t\tcloseModal('EliminaIscrizione')\n\t\t\t\t\t})\n\t\t\t\t})\n\t\t},\n\tUpdateDataRitiro: () => {\n\t\tlet ssel\n\t\tssel = \" Update Iscrizione set Dataritiro = '\" + moment(dataritiro.selectedDate).format(\"YYYY-MM-DD\") + \"'\"\n\t\tssel += \" where IDAllievo = \" + DatiAllievo.data[0].IDAllievo + \" \"\n\t\tssel += \" and  IDClasse = \" +  appsmith.store.idclasseeli + \"  \"\n\t\tstoreValue('ssel', ssel)\n\t\t\t//showAlert(ssel)\n\t\t\tEseguiInsert.run(() => { \n\t\t\t\tAllievoIscrizioni.run(() =>{\n\t\t\t\t\t \n\t\t\t\t\t\t\tcloseModal('EliminaConData')\n\t\t\t\t\t})\n\t\t\t\t})\n\t},\n\t\tUpdateAlunno: () => {\n\t\tlet ssel\n\t\tssel = \"Update Allievi set \";\n\t\tssel += \" Cognome = '\" + cognome.text + \"', \";\n    ssel += \" Nome  = '\" + nome.text + \"', \";\n    ssel += \" Indirizzo = '\" + indirizzo.text + \"', \";\n    ssel += \" Comune  = '\" + localita.selectedOptionValue + \"', \";\n    ssel += \" DataNascita   = '\" + datanascita.selectedDate + \"', \";\n\t\t\t ssel += \" Telefono  = '\" + telefono.text + \"', \";\n\t\t ssel += \" Cellulare  = '\" + cellulare.text + \"', \";\t\t\t\n\n    ssel += \" PostaElettronica  = '\" + email.text + \"', \";\n    ssel += \"  Note  = '\" + note.text?.replace(/['\"]+/g, '´') + \"', \";\n    ssel += \" QuotaAssPagata  = '\" + quotaass.text + \"', \";\n    ssel += \" SchedaAssociativa   = \" +  (iscrizione.isChecked ? 1 : 0 ) + \", \";\n    ssel += \" AutocertificazioneCOVID  = \" + (covid.isChecked ? 1 : 0)   + \" \";\n\t\tssel += \" where  IDAllievo = \" + Table1.triggeredRow.IDAllievo + \"\";\n\t\t//write code here\n\t\t\tstoreValue('ssel', ssel)\n  \t\tEseguiInsert.run(() => {\n\t\t\tcloseModal(\"EditAllievo\")\n\t\t\t \n\t\t\t})\n\t\t\t\n\t},\n\tInsertIscrizione: () => {\n\t\tlet ssel\n\t\tssel = \" INSERT INTO Iscrizione (IDClasse,IDAllievo,MinutiLezione, QuotaCorsi,   RataUno,   RataDue,  RataTre,  Riduzione, NoteIscriz ,Dataritiro) \"\n    ssel += \"VALUES ( \" +  checlasein.selectedOptionValue + \", \"\n\t\tssel += \" \" + DatiAllievo.data[0].IDAllievo  + \",\"\n\t\tssel += \" \" + minisc.selectedOptionValue + \",\"\n\t\tssel += \" \" + quotacorsois.text + \",\"\n\t\tssel += \" \"  + rata1is.text + \",\"\n\t\tssel += \" \"  + rata2is.text + \",\"\n\t\tssel += \" \"  + rata3is.text + \",\"\n\t\tssel += \" \"  + riduzioneis.text + \",\"\n\t\tssel += \" '\"  + notais.text?.replace(/['\"]+/g, '´') + \"', '')\"\n\t\tstoreValue('ssel', ssel)\n  \tEseguiInsert.run(() => { \n\t\t\t \n\t\t\tAllievoIscrizioni.run()\n\t\t})\n\t\tcloseModal(\"ClasseIscr\")\n\t\t\n\t\t//write code here\n\t},\n\tUpdateIscrizione: () => {\n\t\tlet ssel\n\t\tssel = \" Update Iscrizione set \"\n    ssel += \" MinutiLezione = \" + List1.items[JSObject1.currentItem].minutil.selectedOptionValue + \",\"\n\t\tssel += \" QuotaCorsi = \"  + List1.items[JSObject1.currentItem].quotacorsol.text + \",\"\n\t\tif (List1.items[JSObject1.currentItem].rata1l.text == null || List1.items[JSObject1.currentItem].rata1l.text == '') {\n\t\t\t\tssel += \" RataUno = 0 ,\"\n\t\t}else{\n\t\t\tssel += \" RataUno = \"  + List1.items[JSObject1.currentItem].rata1l.text + \",\"\n\t\t}\n\t\tif (List1.items[JSObject1.currentItem].rata2l.text == null || List1.items[JSObject1.currentItem].rata2l.text == '') {\n\t\t\t\tssel += \" RataDue = 0, \"\n\t\t}else{\n\t\t\tssel += \" RataDue = \"  + List1.items[JSObject1.currentItem].rata2l.text + \",\"\n\t\t}\n\t\tif (List1.items[JSObject1.currentItem].rata3l.text == null || List1.items[JSObject1.currentItem].rata3l.text == '') {\n\t\t\t\tssel += \" RataTre = 0, \"\n\t\t}else{\n\t\t\tssel += \" RataTre = \"  + List1.items[JSObject1.currentItem].rata3l.text + \",\"\n\t\t}\n\t\tif (List1.items[JSObject1.currentItem].riduzionel.text == null || List1.items[JSObject1.currentItem].riduzionel.text == '') {\n\t\t\t\tssel += \" Riduzione = 0, \"\n\t\t}else{\n\t\t\tssel += \" Riduzione = \"  + List1.items[JSObject1.currentItem].riduzionel.text + \",\"\n\t\t}\n\t\tif (List1.items[JSObject1.currentItem].notel.text == null || List1.items[JSObject1.currentItem].notel.text == '') {\n\t\t\t\tssel += \" NoteIscriz = '' \"\t\n\t\t}else{\n\t\t\t\tssel += \" NoteIscriz = '\"  + List1.items[JSObject1.currentItem].notel.text?.replace(/['\"]+/g, '´') + \"' \"\n\t\t}\n\t\tssel += \" where IDAllievo = \" + DatiAllievo.data[0].IDAllievo + \" \"\n\t\tssel += \" and  IDClasse = \" +  List1.selectedItem.IDClasse + \"  \"\n\t\tstoreValue('ssel', ssel)\n  \tEseguiInsert.run(() => { \n\t\t\tAllievoIscrizioni.run()\n\t\t})\n\t\t//showAlert(ssel)\n\t\t//write code here\n\t},\n\t\tUpdateIscrizioneNucleo: () => {\n\t\tlet ssel\n\t\tssel = \" Update Iscrizione set \"\n    ssel += \" MinutiLezione = \" + List2.items[JSObject1.currentItem].minutin.text + \",\"\n\t\tssel += \" QuotaCorsi = \"  + List2.items[JSObject1.currentItem].quotan.text + \",\"\n\t\tif (List2.items[JSObject1.currentItem].primaratan.text == null || List2.items[JSObject1.currentItem].primaratan.text == '') {\n\t\t\t\tssel += \" RataUno = 0 ,\"\n\t\t}else{\n\t\t\tssel += \" RataUno = \"  + List2.items[JSObject1.currentItem].primaratan.text + \",\"\n\t\t}\n\t\tif (List2.items[JSObject1.currentItem].secondaratan.text == null || List2.items[JSObject1.currentItem].secondaratan.text == '') {\n\t\t\t\tssel += \" RataDue = 0, \"\n\t\t}else{\n\t\t\tssel += \" RataDue = \"  + List2.items[JSObject1.currentItem].secondaratan.text + \",\"\n\t\t}\n\t\tif (List2.items[JSObject1.currentItem].terzaratan.text == null || List2.items[JSObject1.currentItem].terzaratan.text == '') {\n\t\t\t\tssel += \" RataTre = 0, \"\n\t\t}else{\n\t\t\tssel += \" RataTre = \"  + List2.items[JSObject1.currentItem].terzaratan.text + \",\"\n\t\t}\n\t\tif (List2.items[JSObject1.currentItem].riduzionen.text == null || List2.items[JSObject1.currentItem].riduzionen.text == '') {\n\t\t\t\tssel += \" Riduzione = 0 \"\n\t\t}else{\n\t\t\tssel += \" Riduzione = \"  + List2.items[JSObject1.currentItem].riduzionen.text + \"\"\n\t\t}\n\t\t \n\t\tssel += \" where IDAllievo = \" + List2.selectedItem.IDAllievo + \" \"\n\t\tssel += \" and  IDClasse = \" +  List2.selectedItem.IDClasse + \"  \"\n\t\tstoreValue('ssel', ssel)\n  \tEseguiInsert.run(() => { \n\t\t\tAllieviNucleo.run()\n\t\t})\n\t//\tshowAlert(ssel)\n\t\t//write code here\n\t},\n\t\tInsertAlunno: () => {\n\t\tlet ssel\n\t\tssel = \"Insert into Allievi \t         \t(IDAllievo,Cognome,Nome,Indirizzo,Comune,DataNascita,Telefono,Cellulare,PostaElettronica,Note,QuotaAssPagata,SchedaAssociativa,AutocertificazioneCOVID) \"\nssel += \" Values (\"\n\t\t\tssel += \" (Select max(IDAllievo) + 1 from  Allievi), \" \n\t\t\tssel += \"'\" + cognomeI.text + \"', \";\n    ssel += \"'\" + nomeI.text + \"', \";\n    ssel += \"'\" + indirizzoI.text + \"', \";\n    ssel += \"'\" + localitaI.selectedOptionValue + \"', \";\n    ssel += \" '\" + datanascitaI.selectedDate + \"', \";\n\t\t\t ssel += \"'\" + telefonoI.text + \"', \";\n\t\t ssel += \"'\" + cellulareI.text + \"', \";\t\t\t\n\n    ssel += \"'\" + emailI.text + \"', \";\n    ssel += \"'\" + noteI.text?.replace(/['\"]+/g, '´') + \"', \";\n    ssel += \"'\" + quotaassI.text + \"', \";\n    ssel += \"\" +  (iscrizioneI.isChecked ? 1 : 0 ) + \", \";\n    ssel += \"\" + (covidI.isChecked ? 1 : 0)   + \") \";\n\t\t//write code here\n\t\t\tstoreValue('ssel', ssel)\n  \t\tEseguiInsert.run(() => {\n\t\t\t\tcloseModal(\"NuovoAllievo\")\t\t \n\t\t\t})\n\t\t\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "currentItem",
+        "value": {}
+      },
+      {
+        "name": "MinutiLezione",
+        "value": {}
+      },
+      {
+        "name": "QuotaCorsi",
+        "value": {}
+      },
+      {
+        "name": "RataUno",
+        "value": {}
+      },
+      {
+        "name": "RataDue",
+        "value": {}
+      },
+      {
+        "name": "RataTre",
+        "value": {}
+      },
+      {
+        "name": "Riduzione",
+        "value": {}
+      },
+      {
+        "name": "NoteIscriz",
+        "value": {}
+      },
+      {
+        "name": "Dataritiro",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Allievi_JSObject1",
+  "deleted": false
+}

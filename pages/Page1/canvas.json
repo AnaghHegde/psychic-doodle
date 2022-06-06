@@ -1,0 +1,472 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1280,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1040,
+          "containerStyle": "none",
+          "snapRows": 104,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 54,
+          "minHeight": 1050,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Chart3",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 28,
+              "bottomRow": 65,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "3jskbativb": {
+                  "seriesName": "Sales",
+                  "data": "[\n  {\n    \"x\": \"Rata 1\",\n    \"y\": {{TotaleIncassi.data[0][\"RataUno\"]}}\n  },\n  {\n    \"x\": \"Rata 2\",\n    \"y\": {{TotaleIncassi.data[0][\"RataDue\"]}}\n  },\n  {\n    \"x\": \"Rata 3\",\n    \"y\": {{TotaleIncassi.data[0][\"RataTre\"]}}\n  }\n]"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartName"
+                },
+                {
+                  "key": "chartData.3jskbativb.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "f2j2htbxpp",
+              "rightColumn": 23,
+              "widgetId": "732ufdbeyn",
+              "isVisible": false,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Incassi(€)",
+              "chartName": "Report Incassi Totale incassato: {{TotaleIncassi.data[0][\"Totali\"]}} €",
+              "xAxisName": "Rate",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "widgetName": "Chart2",
+              "allowScroll": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 28,
+              "bottomRow": 65,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "3jskbativb": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 23,
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartName"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"doughnut3d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Statistica  per:\" ,\n      \"xAxisName\": \"Iscritti\",\n      \"yAxisName\": \"Non paganti\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Iscritti\",\n        \"value\": {{TotaleIscritti.data[0][\"count(*)\"]- Filtro.data.length }}\n      },\n      {\n        \"label\": \"Non Paganti\",\n        \"value\": {{Filtro.data.length}}\n      }\n    ]\n  }\n}",
+              "key": "f2j2htbxpp",
+              "rightColumn": 58,
+              "widgetId": "iitm3io6ax",
+              "isVisible": "false",
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Statistica per {{Filtra_per.selectedOptionLabel}}",
+              "xAxisName": "Product Line",
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "widgetName": "Text4",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 66,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "truncateButtonColor": "#FFC13D",
+              "text": "Totale Quota Corsi : {{TotaleIncassi.data[0][\"QuotaCorsi\"]}}",
+              "key": "fdiw8621j6",
+              "rightColumn": 11,
+              "textAlign": "LEFT",
+              "widgetId": "7qf3f220ai",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Text4Copy",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 66,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "truncateButtonColor": "#FFC13D",
+              "text": "Totale incassa: {{TotaleIncassi.data[0][\"Totali\"]}}",
+              "key": "fdiw8621j6",
+              "rightColumn": 23,
+              "textAlign": "LEFT",
+              "widgetId": "fhxvx9ur5h",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Text5",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 71,
+              "bottomRow": 75,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 6,
+              "dynamicBindingPathList": [],
+              "truncateButtonColor": "#FFC13D",
+              "text": "Percentuale incassata:",
+              "key": "fdiw8621j6",
+              "rightColumn": 17,
+              "textAlign": "LEFT",
+              "widgetId": "a2g85foveu",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "CircularProgress1",
+              "displayName": "Circular Progress",
+              "iconSVG": "/static/media/icon.37671330.svg",
+              "topRow": 78,
+              "bottomRow": 88,
+              "parentRowSpace": 10,
+              "type": "CIRCULAR_PROGRESS_WIDGET",
+              "hideCard": false,
+              "fillColor": "#03B365",
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "progress"
+                }
+              ],
+              "shouldTruncate": false,
+              "key": "zjdnrztlkm",
+              "showResult": true,
+              "rightColumn": 15,
+              "widgetId": "lbqzzl6g4u",
+              "counterClockWise": false,
+              "isVisible": false,
+              "shouldScroll": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "progress": "{{parseFloat((TotaleIncassi.data[0].Totali / TotaleIncassi.data[0].QuotaCorsi) * 100).toFixed(2)}}"
+            },
+            {
+              "boxShadow": "VARIANT1",
+              "widgetName": "Container2",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 1,
+              "bottomRow": 27,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 39,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas4",
+                  "rightColumn": 475.5,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "on8vgknkqc",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "bgyw2ofu1p",
+                  "minHeight": 400,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text3",
+                      "borderColor": "#F86A2B",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 18.880859375,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "text": "Messaggistica",
+                      "key": "d4qajbykjk",
+                      "rightColumn": 64,
+                      "textAlign": "CENTER",
+                      "widgetId": "95harjya7e",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "on8vgknkqc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "testoMessaggio",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 8,
+                      "bottomRow": 17,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "labelStyle": "BOLD",
+                      "inputType": "TEXT",
+                      "placeholderText": "invia un messaggio push a tutti gli iscritti",
+                      "maxChars": "500",
+                      "isDisabled": false,
+                      "key": "ifmzg4es2e",
+                      "isRequired": false,
+                      "onTextChanged": "",
+                      "rightColumn": 64,
+                      "widgetId": "r5mg2r5k6h",
+                      "isVisible": true,
+                      "label": "",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "on8vgknkqc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "VARIANT2",
+                      "widgetName": "IconButton2",
+                      "onClick": "{{ function(){\n\tlet ssel;\n\tssel = encodeURI(\"Insert into Messaggi (UIDD, Messaggio, DaChi, Inviato,Data) Values ('all','\" +\ttestoMessaggio.text.replace(\"'\",\"´\") + \"','Admin', 'N', DATE() )\");\nstoreValue('sseli',ssel)\n\tEseguiInsert.run();showAlert('Messaggio inviato','success');\n\tresetWidget(\"testoMessaggio\");\n}() }}",
+                      "buttonColor": "#2E3D49",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 19,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 51,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4a9f5ofyp7",
+                      "rightColumn": 64,
+                      "iconName": "send-message",
+                      "widgetId": "ui7onxfz06",
+                      "isVisible": "true",
+                      "version": 1,
+                      "parentId": "on8vgknkqc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "ROUNDED",
+                      "buttonVariant": "PRIMARY",
+                      "boxShadowColor": "#F86A2B"
+                    }
+                  ],
+                  "key": "c7gb9k6con"
+                }
+              ],
+              "borderWidth": "2",
+              "key": "nn88f2yqv6",
+              "backgroundColor": "",
+              "rightColumn": 63,
+              "widgetId": "bgyw2ofu1p",
+              "containerStyle": "card",
+              "isVisible": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0",
+              "boxShadowColor": "#F86A2B"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6283b25a159ca9472c5eed2e_6283b25b159ca9472c5eed51"
+}

@@ -1,0 +1,504 @@
+{
+  "unpublishedPage": {
+    "name": "Feedback",
+    "slug": "feedback",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1280,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1040,
+          "containerStyle": "none",
+          "snapRows": 116,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 54,
+          "minHeight": 1180,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Image1Copy",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.33f70f3e.svg",
+              "topRow": 1,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 18.880859375,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 53,
+              "dynamicBindingPathList": [],
+              "defaultImage": "https://www.accademia-arteviva.it/web/images/logo-accademia-arteviva.png",
+              "key": "eqg2qtib3l",
+              "image": "",
+              "rightColumn": 64,
+              "objectFit": "contain",
+              "widgetId": "zt69a26wfo",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "enableRotation": false
+            },
+            {
+              "boxShadow": "VARIANT1",
+              "widgetName": "ButtonGroup1",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonzkjww2vq6w.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtons9jllzkpjd.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonmk03n5vp5y.onClick"
+                }
+              ],
+              "displayName": "Button Group",
+              "iconSVG": "/static/media/icon.d6773218.svg",
+              "topRow": 18,
+              "bottomRow": 46,
+              "parentRowSpace": 10,
+              "groupButtons": {
+                "groupButtonmk03n5vp5y": {
+                  "id": "groupButtonmk03n5vp5y",
+                  "label": "Allievi Iscritti",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "placement": "CENTER",
+                  "widgetId": "6dutl81qu7",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "index": 0,
+                  "onClick": "{{navigateTo('AllieviIscritti', {})}}"
+                },
+                "groupButton1": {
+                  "label": "Insegnanti",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonColor": "#2E3D49",
+                  "buttonType": "SIMPLE",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1,
+                  "menuItems": {},
+                  "onClick": "{{navigateTo('Insegnanti',{\"embed\": true})}}",
+                  "iconAlign": "left"
+                },
+                "groupButtonjd15h21eg8": {
+                  "id": "groupButtonjd15h21eg8",
+                  "label": "Allievi",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "lhppjc9zjr",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "index": 2,
+                  "iconAlign": "left",
+                  "onClick": "{{navigateTo('Allievi', {})}}"
+                },
+                "groupButton2": {
+                  "label": "Registro Presenze",
+                  "id": "groupButton2",
+                  "buttonColor": "#2E3D49",
+                  "buttonType": "SIMPLE",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 3,
+                  "menuItems": {},
+                  "onClick": "{{navigateTo('RegistroPresenze',{\"embed\": true})}}",
+                  "placement": "CENTER"
+                },
+                "groupButton3": {
+                  "label": "Utenti APP",
+                  "id": "groupButton3",
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 4,
+                  "menuItems": {
+                    "menuItem1": {
+                      "label": "First Option",
+                      "backgroundColor": "#FFFFFF",
+                      "id": "menuItem1",
+                      "widgetId": "",
+                      "onClick": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 0
+                    },
+                    "menuItem2": {
+                      "label": "Second Option",
+                      "backgroundColor": "#FFFFFF",
+                      "id": "menuItem2",
+                      "widgetId": "",
+                      "onClick": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 1
+                    },
+                    "menuItem3": {
+                      "label": "Delete",
+                      "iconName": "trash",
+                      "iconColor": "#FFFFFF",
+                      "iconAlign": "right",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#DD4B34",
+                      "id": "menuItem3",
+                      "widgetId": "",
+                      "onClick": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 2
+                    }
+                  },
+                  "onClick": "{{navigateTo('UtentiAPP',{\"embed\": true})}}"
+                },
+                "groupButtonzkjww2vq6w": {
+                  "id": "groupButtonzkjww2vq6w",
+                  "label": "Calendario",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "hcyblsvd3r",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Calendario',{embed: true})}}",
+                  "index": 5
+                },
+                "groupButtons9jllzkpjd": {
+                  "id": "groupButtons9jllzkpjd",
+                  "label": "Feedback",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "ej17n0zh8g",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Feedback', {})}}",
+                  "index": 6
+                },
+                "groupButtonzkbonoldgn": {
+                  "id": "groupButtonzkbonoldgn",
+                  "label": "Logout",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#DD4B34",
+                  "placement": "CENTER",
+                  "widgetId": "k326bsi61j",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Login', {})}}",
+                  "index": 7
+                }
+              },
+              "type": "BUTTON_GROUP_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 17.15625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonzkjww2vq6w.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtons9jllzkpjd.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonjd15h21eg8.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonzkbonoldgn.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonmk03n5vp5y.onClick"
+                }
+              ],
+              "leftColumn": 57,
+              "dynamicBindingPathList": [],
+              "key": "i5cz7s4x3d",
+              "orientation": "vertical",
+              "rightColumn": 64,
+              "widgetId": "bom0qnwybl",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "buttonVariant": "SECONDARY",
+              "boxShadowColor": "#F6F7F8"
+            },
+            {
+              "widgetName": "Text2Copy1",
+              "borderColor": "",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.e6c93592.svg",
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 13,
+              "dynamicBindingPathList": [],
+              "text": "ArteViva Connect",
+              "key": "8te4a7re2j",
+              "rightColumn": 50,
+              "backgroundColor": "",
+              "textAlign": "CENTER",
+              "widgetId": "qkcupgu448",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#F86A2B",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "HEADING1"
+            },
+            {
+              "widgetName": "Text1",
+              "borderColor": "",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.dbad9587.svg",
+              "topRow": 6,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 18.880859375,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 13,
+              "dynamicBindingPathList": [],
+              "text": "Feedback\n",
+              "key": "fscgdx6cxg",
+              "backgroundColor": "",
+              "rightColumn": 50,
+              "textAlign": "CENTER",
+              "widgetId": "ly83vfoli6",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#F86A2B",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "HEADING1"
+            },
+            {
+              "boxShadow": "VARIANT2",
+              "widgetName": "IconButton1",
+              "onClick": "{{navigateTo('Menu',{\"embed\":true},'SAME_WINDOW')}}",
+              "buttonColor": "#F86A2B",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.bff4eac0.svg",
+              "topRow": 10,
+              "bottomRow": 14,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "y3d74jkjk4",
+              "rightColumn": 5,
+              "iconName": "arrow-left",
+              "widgetId": "xyc10efou1",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "CIRCLE",
+              "buttonVariant": "SECONDARY"
+            },
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Insegnante",
+                "Commento",
+                "created_at"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 18,
+              "bottomRow": 70,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.created_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Commento.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Insegnante.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "created_at": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "created_at",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Creato il",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.created_at))}}"
+                },
+                "Commento": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "Commento",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Commento",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Commento))}}"
+                },
+                "Insegnante": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "Insegnante",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Insegnante",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Insegnante))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "y3819wpt6j",
+              "derivedColumns": {},
+              "rightColumn": 56,
+              "textSize": "PARAGRAPH",
+              "widgetId": "1gdm5g0gjq",
+              "isVisibleFilters": true,
+              "tableData": "{{Api33.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "Commento": 659
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Feedback_Api33",
+              "name": "Api33",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Feedback",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6283b25a159ca9472c5eed2e_6283b25a159ca9472c5eed47"
+}

@@ -1,0 +1,1487 @@
+{
+  "unpublishedPage": {
+    "name": "UtentiAPP",
+    "slug": "utentiapp",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1280,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "containerStyle": "none",
+          "bottomRow": 840,
+          "snapRows": 129,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 54,
+          "minHeight": 1180,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Text2Copy1Copy1",
+              "borderColor": "",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.e6c93592.svg",
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 13,
+              "dynamicBindingPathList": [],
+              "text": "ArteViva Connect",
+              "key": "8te4a7re2j",
+              "rightColumn": 50,
+              "backgroundColor": "",
+              "textAlign": "CENTER",
+              "widgetId": "6tchvv7qqg",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#F86A2B",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "HEADING1"
+            },
+            {
+              "widgetName": "Text1Copy",
+              "borderColor": "",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.dbad9587.svg",
+              "topRow": 6,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 18.880859375,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 13,
+              "dynamicBindingPathList": [],
+              "text": "Utenti ArteVivaConnect APP\n",
+              "key": "fscgdx6cxg",
+              "backgroundColor": "",
+              "rightColumn": 50,
+              "textAlign": "CENTER",
+              "widgetId": "ua8p2h21wk",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#F86A2B",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "HEADING1"
+            },
+            {
+              "widgetName": "Image1Copy",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.33f70f3e.svg",
+              "topRow": 0,
+              "bottomRow": 9,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 18.880859375,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 53,
+              "dynamicBindingPathList": [],
+              "defaultImage": "https://www.accademia-arteviva.it/web/images/logo-accademia-arteviva.png",
+              "key": "eqg2qtib3l",
+              "image": "",
+              "rightColumn": 64,
+              "objectFit": "contain",
+              "widgetId": "ewn7a1sot0",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "enableRotation": false
+            },
+            {
+              "boxShadow": "VARIANT1",
+              "widgetName": "ButtonGroup1",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonzkjww2vq6w.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtons9jllzkpjd.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton307i57y4q3.onClick"
+                }
+              ],
+              "displayName": "Button Group",
+              "iconSVG": "/static/media/icon.d6773218.svg",
+              "topRow": 16,
+              "bottomRow": 44,
+              "parentRowSpace": 10,
+              "groupButtons": {
+                "groupButton307i57y4q3": {
+                  "id": "groupButton307i57y4q3",
+                  "label": "Allievi Iscritti",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "placement": "CENTER",
+                  "widgetId": "mb9ufqsy5c",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('AllieviIscritti', {})}}",
+                  "index": 0
+                },
+                "groupButton1": {
+                  "label": "Insegnanti",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonColor": "#2E3D49",
+                  "buttonType": "SIMPLE",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1,
+                  "menuItems": {},
+                  "onClick": "{{navigateTo('Insegnanti',{\"embed\": true})}}",
+                  "iconAlign": "left"
+                },
+                "groupButtonjd15h21eg8": {
+                  "id": "groupButtonjd15h21eg8",
+                  "label": "Anagrafica Allievi",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "lhppjc9zjr",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "index": 2,
+                  "iconAlign": "left",
+                  "onClick": "{{navigateTo('Allievi', {})}}"
+                },
+                "groupButton2": {
+                  "label": "Registro Presenze",
+                  "id": "groupButton2",
+                  "buttonColor": "#2E3D49",
+                  "buttonType": "SIMPLE",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 3,
+                  "menuItems": {},
+                  "onClick": "{{navigateTo('RegistroPresenze',{\"embed\": true})}}",
+                  "placement": "CENTER"
+                },
+                "groupButton3": {
+                  "label": "Utenti APP",
+                  "id": "groupButton3",
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 4,
+                  "menuItems": {
+                    "menuItem1": {
+                      "label": "First Option",
+                      "backgroundColor": "#FFFFFF",
+                      "id": "menuItem1",
+                      "widgetId": "",
+                      "onClick": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 0
+                    },
+                    "menuItem2": {
+                      "label": "Second Option",
+                      "backgroundColor": "#FFFFFF",
+                      "id": "menuItem2",
+                      "widgetId": "",
+                      "onClick": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 1
+                    },
+                    "menuItem3": {
+                      "label": "Delete",
+                      "iconName": "trash",
+                      "iconColor": "#FFFFFF",
+                      "iconAlign": "right",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#DD4B34",
+                      "id": "menuItem3",
+                      "widgetId": "",
+                      "onClick": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 2
+                    }
+                  },
+                  "onClick": "{{navigateTo('UtentiAPP',{\"embed\": true})}}"
+                },
+                "groupButtonzkjww2vq6w": {
+                  "id": "groupButtonzkjww2vq6w",
+                  "label": "Calendario",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "hcyblsvd3r",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Calendario',{embed: true})}}",
+                  "index": 5
+                },
+                "groupButtons9jllzkpjd": {
+                  "id": "groupButtons9jllzkpjd",
+                  "label": "Feedback",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#2E3D49",
+                  "widgetId": "ej17n0zh8g",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Feedback', {})}}",
+                  "index": 6
+                },
+                "groupButtonzkbonoldgn": {
+                  "id": "groupButtonzkbonoldgn",
+                  "label": "Logout",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "buttonColor": "#DD4B34",
+                  "placement": "CENTER",
+                  "widgetId": "k326bsi61j",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Login', {})}}",
+                  "index": 7
+                }
+              },
+              "type": "BUTTON_GROUP_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 17.15625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonzkjww2vq6w.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtons9jllzkpjd.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonjd15h21eg8.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonzkbonoldgn.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton307i57y4q3.onClick"
+                }
+              ],
+              "leftColumn": 57,
+              "dynamicBindingPathList": [],
+              "key": "i5cz7s4x3d",
+              "orientation": "vertical",
+              "rightColumn": 64,
+              "widgetId": "j4vtovizqy",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "buttonVariant": "SECONDARY",
+              "boxShadowColor": "#F6F7F8"
+            },
+            {
+              "boxShadow": "VARIANT4",
+              "widgetName": "IconButton2Copy",
+              "onClick": "{{NodeUtentiApp.run()}}",
+              "buttonColor": "#F86A2B",
+              "dynamicPropertyPathList": [],
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634a.svg",
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 5,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "r9dn51obdy",
+              "rightColumn": 9,
+              "iconName": "refresh",
+              "widgetId": "a8h8jlvfcg",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "CIRCLE",
+              "buttonVariant": "SECONDARY"
+            },
+            {
+              "boxShadow": "VARIANT2",
+              "widgetName": "IconButton1",
+              "onClick": "{{navigateTo('Menu',{\"embed\":true},'SAME_WINDOW')}}",
+              "buttonColor": "#F86A2B",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.bff4eac0.svg",
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "y3d74jkjk4",
+              "rightColumn": 4,
+              "iconName": "arrow-left",
+              "widgetId": "q2b41kdfnu",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "CIRCLE",
+              "buttonVariant": "SECONDARY"
+            },
+            {
+              "widgetName": "TabUtenti",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "customColumn1",
+                "Nome",
+                "Cognome",
+                "Email",
+                "Password",
+                "Attivo",
+                "Insegnante",
+                "Allievo",
+                "ResponsabileFiliale",
+                "UIDD",
+                "IdAlievo",
+                "IdInsegnante",
+                "ModificaPassword",
+                "EmailInviata"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.Attivo.cellBackground"
+                }
+              ],
+              "compactMode": "SHORT",
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 16,
+              "bottomRow": 73,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
+                }
+              ],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.Email.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Password.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Allievo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Insegnante.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ResponsabileFiliale.computedValue"
+                },
+                {
+                  "key": "primaryColumns.UIDD.computedValue"
+                },
+                {
+                  "key": "primaryColumns.IdAlievo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.IdInsegnante.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ModificaPassword.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Attivo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Nome.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Cognome.computedValue"
+                },
+                {
+                  "key": "primaryColumns.EmailInviata.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Attivo.cellBackground"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "Attivo": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Attivo))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 9,
+                  "isVisible": true,
+                  "label": "Attivo",
+                  "columnType": "text",
+                  "horizontalAlignment": "CENTER",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Attivo",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER",
+                  "cellBackground": "{{TabUtenti.sanitizedTableData.map((currentRow) => (  function(){\nlet colors = {\n    '1':'Orange',\n    '0':'Purple'\n   };\nreturn colors[currentRow.Attivo]\n}()))}}"
+                },
+                "Email": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Email))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 0,
+                  "isVisible": true,
+                  "label": "Email",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Email",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "IdInsegnante": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.IdInsegnante))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 7,
+                  "isVisible": true,
+                  "label": "IdInsegnante",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "IdInsegnante",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "Insegnante": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Insegnante))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 3,
+                  "isVisible": true,
+                  "label": "Insegnante",
+                  "columnType": "text",
+                  "horizontalAlignment": "CENTER",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Insegnante",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "IdAlievo": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.IdAlievo))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 6,
+                  "isVisible": true,
+                  "label": "IdAlievo",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "IdAlievo",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "customColumn1": {
+                  "isCellVisible": true,
+                  "boxShadow": "NONE",
+                  "isDerived": true,
+                  "computedValue": "",
+                  "onClick": "{{showModal('UtentiEdit')}}",
+                  "iconName": "edit",
+                  "buttonColor": "#2E3D49",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "index": 12,
+                  "isVisible": true,
+                  "label": "Edit",
+                  "columnType": "iconButton",
+                  "borderRadius": "CIRCLE",
+                  "buttonVariant": "TERTIARY",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "customColumn1",
+                  "isDisabled": false,
+                  "buttonLabelColor": "#FFFFFF"
+                },
+                "ModificaPassword": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.ModificaPassword))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 8,
+                  "isVisible": true,
+                  "label": "ModificaPassword",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "ModificaPassword",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "UIDD": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.UIDD))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 5,
+                  "isVisible": true,
+                  "label": "UIDD",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "UIDD",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "Allievo": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Allievo))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 2,
+                  "isVisible": true,
+                  "label": "Allievo",
+                  "columnType": "text",
+                  "horizontalAlignment": "CENTER",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Allievo",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "Nome": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Nome))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 10,
+                  "isVisible": true,
+                  "label": "Nome",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Nome",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "Cognome": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Cognome))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 11,
+                  "isVisible": true,
+                  "label": "Cognome",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Cognome",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "Password": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.Password))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 1,
+                  "isVisible": true,
+                  "label": "Password",
+                  "columnType": "text",
+                  "horizontalAlignment": "LEFT",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "Password",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "ResponsabileFiliale": {
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.ResponsabileFiliale))}}",
+                  "textSize": "PARAGRAPH",
+                  "index": 4,
+                  "isVisible": true,
+                  "label": "ResponsabileFiliale",
+                  "columnType": "text",
+                  "horizontalAlignment": "CENTER",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "ResponsabileFiliale",
+                  "isDisabled": false,
+                  "verticalAlignment": "CENTER"
+                },
+                "EmailInviata": {
+                  "index": 12,
+                  "width": 150,
+                  "id": "EmailInviata",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "EmailInviata",
+                  "computedValue": "{{TabUtenti.sanitizedTableData.map((currentRow) => ( currentRow.EmailInviata))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "h5t7ox3q5m",
+              "derivedColumns": {
+                "customColumn1": {
+                  "isCellVisible": true,
+                  "boxShadow": "VARIANT2",
+                  "isDerived": true,
+                  "computedValue": "",
+                  "iconName": "edit",
+                  "buttonColor": "#2E3D49",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "index": 12,
+                  "isVisible": true,
+                  "label": "Edit",
+                  "columnType": "iconButton",
+                  "borderRadius": "CIRCLE",
+                  "width": 150,
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "id": "customColumn1",
+                  "isDisabled": false,
+                  "buttonLabelColor": "#FFFFFF"
+                }
+              },
+              "rightColumn": 56,
+              "textSize": "PARAGRAPH",
+              "widgetId": "g1jk5zgvqb",
+              "isVisibleFilters": true,
+              "tableData": "{{NodeUtentiApp.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "Allievo": 82,
+                "Insegnante": 95,
+                "step": 62,
+                "customColumn1": 60,
+                "status": 75,
+                "Password": 113,
+                "UIDD": 286,
+                "ResponsabileFiliale": 130,
+                "Attivo": 64,
+                "Email": 225
+              }
+            },
+            {
+              "widgetName": "UtentiEdit",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e.svg",
+              "topRow": 75,
+              "bottomRow": 99,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
+              "leftColumn": 23,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 550,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 550,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "chkAttivo",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 23,
+                      "bottomRow": 27,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 17,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "1f08t7cg1z",
+                      "isRequired": false,
+                      "rightColumn": 36,
+                      "widgetId": "lsz5ckmoc1",
+                      "isVisible": true,
+                      "label": "Attivo",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": "{{function(){}\nif (TabUtenti.triggeredRow.Attivo == 1) {return true} else {return false}}}"
+                    },
+                    {
+                      "widgetName": "chkModifica_Password",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 18,
+                      "bottomRow": 22,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 17,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "1f08t7cg1z",
+                      "isRequired": false,
+                      "rightColumn": 35,
+                      "widgetId": "v80tk0c6o1",
+                      "isVisible": true,
+                      "label": "Modifica Password",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": "{{function(){}\nif (TabUtenti.triggeredRow.ModificaPassword == 1) {return true} else {return false}}}"
+                    },
+                    {
+                      "widgetName": "Text2Copy1Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.e6c93592.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 18,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{\"Cognome: \" +TabUtenti.triggeredRow.Cognome}}",
+                      "key": "lsxzr5tqe7",
+                      "rightColumn": 34,
+                      "textAlign": "LEFT",
+                      "widgetId": "89x2supwj2",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "Text2Copy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.e6c93592.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{\"Nome: \" +TabUtenti.triggeredRow.Nome}}",
+                      "key": "lsxzr5tqe7",
+                      "rightColumn": 17,
+                      "textAlign": "LEFT",
+                      "widgetId": "6vzj1mf36w",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "Text2CopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.e6c93592.svg",
+                      "topRow": 33,
+                      "bottomRow": 39,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 34,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{\"UIDD: \" +TabUtenti.triggeredRow.UIDD}}",
+                      "key": "lsxzr5tqe7",
+                      "rightColumn": 62,
+                      "textAlign": "LEFT",
+                      "widgetId": "9xgowwl6x0",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "chkResp_Filiale",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 28,
+                      "bottomRow": 32,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "1f08t7cg1z",
+                      "isRequired": false,
+                      "rightColumn": 13,
+                      "widgetId": "fsldt0heq9",
+                      "isVisible": true,
+                      "label": "Resp. Filiale",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": "{{function(){}\nif (TabUtenti.triggeredRow.ResponsabileFiliale == 1) {return true} else {return false}}}"
+                    },
+                    {
+                      "widgetName": "chkInsegnante",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 23,
+                      "bottomRow": 27,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "1f08t7cg1z",
+                      "isRequired": false,
+                      "rightColumn": 13,
+                      "widgetId": "7i0coi64k6",
+                      "isVisible": true,
+                      "label": "Insegnante",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": "{{function(){}\nif (TabUtenti.triggeredRow.Insegnante == 1) {return true} else {return false}}}"
+                    },
+                    {
+                      "widgetName": "Text2Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.e6c93592.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 35,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{\"Password: \" +TabUtenti.triggeredRow.Password}}",
+                      "key": "lsxzr5tqe7",
+                      "rightColumn": 47,
+                      "textAlign": "LEFT",
+                      "widgetId": "yel59aa0tt",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "Icon1",
+                      "rightColumn": 64,
+                      "onClick": "{{closeModal('UtentiEdit')}}",
+                      "iconName": "cross",
+                      "buttonColor": "#2E3D49",
+                      "displayName": "Icon",
+                      "iconSVG": "/static/media/icon.31d6cfe0.svg",
+                      "widgetId": "ytn0arv8d4",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "isVisible": true,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "version": 1,
+                      "hideCard": true,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "leftColumn": 56,
+                      "borderRadius": "SHARP",
+                      "buttonVariant": "TERTIARY",
+                      "iconSize": 24,
+                      "key": "nm4rr27k12"
+                    },
+                    {
+                      "widgetName": "Text1",
+                      "borderColor": "",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.e6c93592.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "text": "Utenti Arteviva Connect",
+                      "key": "lsxzr5tqe7",
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "widgetId": "yca08xe53c",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#F86A2B",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Button1",
+                      "onClick": "{{closeModal('UtentiEdit')}}",
+                      "buttonColor": "#2E3D49",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 49,
+                      "bottomRow": 53,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "text": "Chiudi",
+                      "isDisabled": false,
+                      "key": "abdwko9ujb",
+                      "rightColumn": 13,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "zmkytklnzr",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "recaptchaType": "V3",
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "buttonVariant": "SECONDARY"
+                    },
+                    {
+                      "boxShadow": "VARIANT4",
+                      "widgetName": "Button2",
+                      "onClick": "{{ function(){ \n\tlet ssel;\n\tssel = \"Update UtentiApp set Allievo = \" + chkAllievo.isChecked + \", Insegnante = \" + chkInsegnante.isChecked + \", ResponsabileFiliale = \" + chkResp_Filiale.isChecked + \", ModificaPassword =\" + chkModifica_Password.isChecked + \", Attivo =\" + chkAttivo.isChecked + \", IdInsegnante = \" + sinsegnante.selectedOptionValue + \" where Email ='\" + Text2.text + \"'\";\n\t\nstoreValue('sseli',ssel)\n\tEseguiInsert.run(); \ncloseModal('UtentiEdit');}() }}",
+                      "buttonColor": "#2E3D49",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 49,
+                      "bottomRow": 53,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 51,
+                      "dynamicBindingPathList": [],
+                      "text": "Conferma",
+                      "isDisabled": false,
+                      "key": "abdwko9ujb",
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "xqng4svxgw",
+                      "buttonStyle": "PRIMARY_BUTTON",
+                      "isVisible": true,
+                      "version": 1,
+                      "recaptchaType": "V3",
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "buttonVariant": "SECONDARY"
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.e6c93592.svg",
+                      "topRow": 13,
+                      "bottomRow": 17,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 7,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{TabUtenti.triggeredRow.Email}}",
+                      "key": "lsxzr5tqe7",
+                      "rightColumn": 34,
+                      "textAlign": "LEFT",
+                      "widgetId": "px1b0ijst5",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "chkAllievo",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 18,
+                      "bottomRow": 22,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "1f08t7cg1z",
+                      "isRequired": false,
+                      "rightColumn": 13,
+                      "widgetId": "jqsem0i5yj",
+                      "isVisible": true,
+                      "label": "Allievo",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": "{{function(){}\nif (TabUtenti.triggeredRow.Allievo == 1) {return true} else {return false}}}"
+                    },
+                    {
+                      "widgetName": "sinsegnante",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "topRow": 18,
+                      "bottomRow": 22,
+                      "parentRowSpace": 10,
+                      "type": "DROP_DOWN_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "{{TabUtenti.triggeredRow.IdInsegnante}}",
+                      "selectionType": "SINGLE_SELECT",
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 41,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
+                        }
+                      ],
+                      "options": "{{InsegnantiApp.data}}",
+                      "isDisabled": false,
+                      "key": "9ekmkcmqak",
+                      "isRequired": false,
+                      "rightColumn": 61,
+                      "widgetId": "cu8gg230dh",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "boxShadow": "VARIANT2",
+                      "widgetName": "IconButton2",
+                      "onClick": "{{ function(){\n\tlet ssel;\n\tssel = \"Insert into Messaggi (UIDD, Messaggio, DaChi, Inviato,Data) Values ('\" + TabUtenti.triggeredRow.UIDD + \"','\" +\ttestoMessaggio.text.replace(\"'\",\"´\") + \"','Admin', 'N', DATE() )\";\nstoreValue('sseli',ssel)\n\tEseguiInsert.run(); closeModal(\"UtentiEdit\")\n}() }}",
+                      "buttonColor": "#F86A2B",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 41,
+                      "bottomRow": 45,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 22,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "4a9f5ofyp7",
+                      "rightColumn": 26,
+                      "iconName": "send-message",
+                      "widgetId": "ujjtpl8a0a",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    },
+                    {
+                      "widgetName": "testoMessaggio",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 34,
+                      "bottomRow": 45,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "labelStyle": "BOLD",
+                      "inputType": "TEXT",
+                      "placeholderText": "invia un messaggio push",
+                      "isDisabled": false,
+                      "key": "ifmzg4es2e",
+                      "isRequired": false,
+                      "onTextChanged": "",
+                      "rightColumn": 21,
+                      "widgetId": "pvyx7bc0ay",
+                      "isVisible": true,
+                      "label": "",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "widgetName": "Text3",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 13,
+                      "bottomRow": 17,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 14.0625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "text": "Email:",
+                      "key": "i9p1bwwoms",
+                      "rightColumn": 6,
+                      "textAlign": "LEFT",
+                      "widgetId": "y80w4kcmns",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "2hldywyb0y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "qm0fbd5dy1",
+                  "rightColumn": 475.5,
+                  "detachFromLayout": true,
+                  "widgetId": "2hldywyb0y",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "yzxyxm0ch8",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "z05775es7m",
+              "height": 550,
+              "rightColumn": 47,
+              "detachFromLayout": true,
+              "widgetId": "yzxyxm0ch8",
+              "canOutsideClickClose": false,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "onClose": "{{NodeUtentiApp.run(() => resetWidget(\"testoMessaggio\"), () => {})}}",
+              "width": 912
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "UtentiAPP_InsegnantiApp",
+              "name": "InsegnantiApp",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "UtentiAPP_NodeUtentiApp",
+              "name": "NodeUtentiApp",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "UtentiAPP",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6283b25a159ca9472c5eed2e_6283b25a159ca9472c5eed41"
+}

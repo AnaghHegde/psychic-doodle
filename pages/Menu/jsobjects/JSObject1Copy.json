@@ -1,0 +1,23 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1Copy",
+    "pageId": "Menu",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tInserisciSede:  () => {\n\t\tlet ssel\n\t\tssel = \"Insert into Sedi (IDSede, AnnoScolastico, Sede,DataInizioScuola,DataFineScuola) Values ( (select max(IDSede) + 1 from Sedi), \"\n\t\tssel += \" \" + appsmith.store.annoaccademico + \", \"\n\t\tssel += \" '\" + txtSede.text + \"', \"\n\t\tssel += \" '\" + txtDa.selectedDate + \"',\"\n\t\tssel += \" '\" + txtA.selectedDate + \"'\"\t\n\t\tssel += \" \t)\"\n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\n\t\tSediSql.run()\n\t\t},\n\t\t  () => showAlert('Error insert failed!'))\n\t\t//write code here\n\t},\n\t\n\tInserisciMateriaInsegnanteSede: () => {\n\t\tlet ssel\n\t\tssel = \"Insert into Classi (IDClasse, IDMateria, Sede, IDInsegnante,LezioniPerAnno) Values ( (select max(IDClasse) + 1 from Classi), \"\n\t\tssel += \" \" + celectmateria.selectedOptionValue + \", \"\n\t\tssel += \" \" + TabSedi.selectedRow.IDSede  + \", \"\n\t\tssel += \" \" + sinsegnante.selectedOptionValue + \",\"\n\t\tssel += \" 30\"\t\n\t\tssel += \" \t)\"\n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\n\t\t\t\n\t\tEseguiSql.run()\n\t\n\t\t},\n\t\t  () => showAlert('Error insert failed!'))\n\t\t\n\t},\n\tModificaMateriaInsegnanteSede: () => {\n\t\tlet ssel\n\t\tssel = \"Update Classi set  IDInsegnante = \" + sinsegnante.selectedOptionValue + \",\"\n\t\tssel += \" IDMateria = \" + celectmateria.selectedOptionValue + \" where  \"\n\t\tssel += \" IDClasse = \" + tabInsegnati.selectedRow.IDClasse \n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\t\t\n\t\t\tEseguiSql.run()\n\t\t},\n\t\t  () => showAlert('Error insert failed!'))\n\t\t\n\t},\n\tEliminaMateriaInsegnanteSede: () => {\n\t\tlet ssel\n\t\tssel = \"Delete from  Classi where \" \n\t\tssel += \" IDClasse = \" + tabInsegnati.selectedRow.IDClasse \n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\n\t\t\t\tlet ssel \n\t\t\t\tssel = \"Delete from  Iscrizione where \" \n\t\t\t\tssel += \" IDClasse = \" + tabInsegnati.selectedRow.IDClasse \n\t\t\t\tstoreValue('sqlsedi', ssel)\n\t\t\t\tEseguiInsertSedi.run(() =>{\n\t\t\t\t\tEseguiSql.run()\n\t\t\t\t}),\n\t\t  () => showAlert('Error Cancellazione Iscrizione failed!')\n\t\t},\n\t\t  () => showAlert('Error Cancellazione Classe failed!'))\n\t\t\n\t},\n\t\n\tInserisciMateriaSql: () => {\n\t\tlet ssel\n\t\tssel = \"Insert into Materie (IDMaterie, Materie, MateriePerStatistica,DescrizioneBreveMateria) Values ( (select max(IDMaterie) + 1 from Materie), \"\n\t\tssel += \" '\" + chemateriaI.text?.replace(/['\"]+/g, '´') + \"', \"\n\t\tssel += \" '\" + chemateriaI.text?.replace(/['\"]+/g, '´')  + \"', \"\n\t\tssel += \" '\" + chemateriaDBI.text?.replace(/['\"]+/g, '´')  + \"' \"\t\n\t\tssel += \" \t)\"\n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\n\t\tSelectMaterie.run()\n\t\t},\n\t\t  () => showAlert('Error insert failed!'))\n\t\t\n\t},\n\t\n\tModificaMateriaSql: () => {\n\t\tlet ssel\n\t\tssel = \"Update Materie  set \"\n\t\tssel += \" Materie = '\" + chemateriaM.text?.replace(/['\"]+/g, '´') + \"', \"\n\t\tssel +=  \"DescrizioneBreveMateria = '\" + chemateriaDBM.text?.replace(/['\"]+/g, '´') + \"', \"\n\t\tssel += \" MateriePerStatistica = '\" + chemateriaM.text?.replace(/['\"]+/g, '´')  + \"' \"\n\t\tssel += \" where IDMaterie = \" + tabInsegnati.selectedRow.IDMaterie + \" \"\n\t\tssel += \" \t\"\n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\n\t\tSelectMaterie.run()\n\t\t},\n\t\t  () => showAlert('Error insert failed!'))\n\t\t\n\t},\n\tEliminaMateriaSql: () => {\n\t\tlet ssel\n\t\tssel = \"Delete from Materie \"\n\t\tssel += \" where IDMaterie = \" + tabInsegnati.selectedRow.IDMaterie + \" \"\n\t\tssel += \" \t\"\n\t\tstoreValue('sqlsedi', ssel)\n\t\tEseguiInsertSedi.run(() =>{\n\t\tSelectMaterie.run()\n\t\t},\n\t\t  () => showAlert('Error insert failed!'))\n\t\t\n\t},\n\tselectAllieviperMateria: () => {\n\t\t\n\t\tEseguiSql.run( () => {\n\t\n\t\t\treturn EseguiSql.data.map\n\t\t}) \n\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Menu_JSObject1Copy",
+  "deleted": false
+}
